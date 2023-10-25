@@ -1,5 +1,6 @@
 import getCategories from "@/actions/get-categories";
 import MainNav from "@/components/main-nav";
+import NavbarActions from "@/components/nabvar-actions";
 import Container from "@/components/ui/container";
 import Link from "next/link";
 
@@ -13,6 +14,7 @@ export default async function Navbar() {
             <p className="font-bold text-xl">STORE</p>
           </Link>
           <MainNav data={categories} />
+          <NavbarActions />
         </div>
       </Container>
     </div>
