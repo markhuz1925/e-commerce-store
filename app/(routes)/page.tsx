@@ -13,9 +13,9 @@ export default async function HomePage() {
     <Container>
       <div className="space-y-10 pb-10">
         <Billboard data={billboard} />
-      </div>
-      <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-8">
-        <ProductList title="Featured Products" products={products} />
+        <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-8">
+          <ProductList title="Featured Products" products={products} />
+        </div>
       </div>
     </Container>
   );
