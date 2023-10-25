@@ -7,7 +7,7 @@ interface Query {
   categoryId?: string;
   colorId?: string;
   sizeId?: string;
-  isFeatured?: string;
+  isFeatured?: boolean;
 }
 
 export default async function getProducts(query: Query): Promise<Product[]> {
