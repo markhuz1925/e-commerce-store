@@ -16,7 +16,7 @@ export default function Modal({ open, onClose, children }: Props) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent className="max-w-[calc(100vw-50px)]">
         <div>{children}</div>
       </DialogContent>
     </Dialog>
